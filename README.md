@@ -15,3 +15,15 @@
   - **打分策略与回溯剪枝**：理解了代码中贴墙加分（+100）、靠角加分（+20）的权重设计，以及如何利用 `NodeBudget` 和 `TimeBudgetMs` 进行超时剪枝，防止服务器卡死。这些逻辑在实际测试中均能依据几何坐标进行推演验证。
 - **自主提示词编写**：
 见同级目录内的test.md
+## 2.项目运行结果
+- **example1**
+<img width="2232" height="2297" alt="image" src="https://github.com/user-attachments/assets/396ed0f8-8ce3-427f-8274-2b915ef01b46" />
+
+- **example2**
+<img width="2443" height="2292" alt="image" src="https://github.com/user-attachments/assets/eea7c743-7ca6-4e1a-b649-4b5c857729c7" />
+
+- **example3**
+<img width="2275" height="2344" alt="image" src="https://github.com/user-attachments/assets/253084bd-ff75-47aa-85fd-92feb39ca292" />
+
+- **example4**
+<img width="2320" height="2183" alt="image" src="https://github.com/user-attachments/assets/2449dd64-8cfe-41b8-afeb-ed9499272d0a" />
