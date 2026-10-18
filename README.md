@@ -27,3 +27,13 @@
 
 - **example4**
 <img width="2320" height="2183" alt="image" src="https://github.com/user-attachments/assets/2449dd64-8cfe-41b8-afeb-ed9499272d0a" />
+
+## 3.项目快速启动的方式
+无论你有没有打开 VS 还是 VS Code，只要你有终端（Terminal / PowerShell / CMD）：
+打开终端，使用 cd 命令进入包含 TakeHome.csproj 的那个文件夹（在server 目录）。
+
+输入命令：**dotnet run**
+
+终端会开始编译，几秒钟后，会打印出Now listening on: http://0.0.0.0:8080。这说明你的服务器已经启动了，之后访问 http://localhost:8080/就能看到接口测试页面。
+
+在 Visual Studio (VS)中快速启动则更简单只需要在VS里打开TakeHome.csproj，然后运行这个文件就可以了
