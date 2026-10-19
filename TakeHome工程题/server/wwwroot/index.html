@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>居灵-TakeHome 布局求解器</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>居灵-TakeHome 布局求解器</h1>
+  <p>矩形物体在轮廓内贴墙摆放 · 不重叠 · 不挡门 · 冰箱开门净空 · 内开门 N×N 摆动区</p>
+</header>
+<main>
+  <section class="panel controls">
+    <div class="row">
+      <span class="label">示例：</span>
+      <button class="ex" data-ex="example1">示例 1</button>
+      <button class="ex" data-ex="example2">示例 2</button>
+      <button class="ex" data-ex="example3">示例 3</button>
+      <button class="ex" data-ex="example4">示例 4</button>
+      <button id="run" class="primary">运行求解</button>
+    </div>
+    <textarea id="input" spellcheck="false" placeholder="在此粘贴 JSON 输入"></textarea>
+  </section>
+
+  <section class="panel hidden" id="result-panel">
+    <div id="result" class="result"></div>
+  </section>
+
+  <section class="panel canvas-panel hidden" id="canvas-panel">
+    <canvas id="canvas"></canvas>
+    <div id="legend" class="legend"></div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
