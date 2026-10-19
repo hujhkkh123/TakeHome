@@ -17,16 +17,16 @@
 见同级目录内的test.md
 ## 2.项目运行结果
 - **example1**
-<img width="2232" height="2297" alt="image" src="https://github.com/user-attachments/assets/396ed0f8-8ce3-427f-8274-2b915ef01b46" />
+<img width="1947" height="2138" alt="image" src="https://github.com/user-attachments/assets/ba58b004-6c70-4570-8d79-ae78713b8e55" />
 
 - **example2**
-<img width="2443" height="2292" alt="image" src="https://github.com/user-attachments/assets/eea7c743-7ca6-4e1a-b649-4b5c857729c7" />
+<img width="2414" height="2294" alt="image" src="https://github.com/user-attachments/assets/f50d86d0-7863-4ffb-9196-84472e5dedb7" />
 
 - **example3**
-<img width="2275" height="2344" alt="image" src="https://github.com/user-attachments/assets/253084bd-ff75-47aa-85fd-92feb39ca292" />
+<img width="2405" height="2298" alt="image" src="https://github.com/user-attachments/assets/0e937c83-6651-4fae-8546-995a1d5e2454" />
 
 - **example4**
-<img width="2320" height="2183" alt="image" src="https://github.com/user-attachments/assets/2449dd64-8cfe-41b8-afeb-ed9499272d0a" />
+<img width="2256" height="2193" alt="image" src="https://github.com/user-attachments/assets/79e7bd87-a05b-4bce-919f-6632ced60fa7" />
 
 ## 3.项目快速启动的方式
 无论你有没有打开 VS 还是 VS Code，只要你有终端（Terminal / PowerShell / CMD）：
@@ -37,3 +37,7 @@
 终端会开始编译，几秒钟后，会打印出Now listening on: http://0.0.0.0:8080。这说明你的服务器已经启动了，之后访问 http://localhost:8080/就能看到接口测试页面。
 
 在 Visual Studio (VS)中快速启动则更简单只需要在VS里打开TakeHome.csproj，然后运行这个文件就可以了
+## 4.特别注意(必看)
+- 当前端点击运行求解时，在没有得到结果的情况下不要再次点击避免产生不必要的显示bug，由于example3跟example4比较复杂所以求解比较慢，需要比较多的时间，代码中已经设置了最长等待时间为90秒
+
+`private const long TimeBudgetMs = 90000;            // 每个请求最多搜索 90 秒（保证瘦长房型 example3 也能稳定找到完整解）`
